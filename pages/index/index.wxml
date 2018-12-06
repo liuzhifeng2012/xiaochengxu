@@ -1,13 +1,47 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class='indexContainer'>
+  <navCustom navShow='{{false}}' />
+  <view class='header'>
+    <image src="/images/logo.png"></image>
+    <view class='searchWrap'>
+        <image src="/images/searchIcon.png"></image>
+        <text>请输入搜索关键字</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+  <scroll-view scroll-x="true" class='scrollView'>
+     <view class='navList'>
+       <view class='navItem active'>
+         宏观
+       </view>
+       <view class='navItem'>
+         房源
+       </view>
+       <view class='navItem'>
+         限竞房
+       </view>
+       <view class='navItem'>
+         学校
+       </view>
+       <view class='navItem'>
+         片区
+       </view>
+       <view class='navItem'>
+         房价
+       </view>
+       <view class='navItem'>
+         交通
+       </view>
+       <view class='navItem'>
+         海外
+       </view>
+       <view class='navItem'>
+         风水
+       </view>
+     </view>
+  </scroll-view>
+  <block class='articleList'>
+    <view bindtap='toDetail' data-viewitem='{{1}}'>
+       <template is="articleList"></template>
+    </view>
+  </block>
 </view>

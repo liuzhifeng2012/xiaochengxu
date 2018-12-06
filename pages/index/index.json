@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "navCustom": "/pages/template/navCustom/navCustom"
+  }
+}

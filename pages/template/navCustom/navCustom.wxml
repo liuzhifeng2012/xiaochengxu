@@ -1,0 +1,4 @@
+<!--pages/template/navCustom/navCustom.wxml-->
+<view class='navCustom' wx:if="{{navShow}}">
+  <text>navBar</text>
+</view>
