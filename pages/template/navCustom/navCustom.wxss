@@ -1,1 +1,9 @@
 /* pages/template/navCustom/navCustom.wxss */
+.navCustom{
+  background: #fff;
+  height:64px;
+  width: 100%;
+  position: fixed;
+  top:0px;
+  left:0px;
+}

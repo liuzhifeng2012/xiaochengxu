@@ -1,0 +1,28 @@
+<template name="articleList">
+  <view class='articleItem'>
+    <view class='articleTitle'>
+      <text>年底北京楼市探寻“平衡点” 刚需可选择余地加大</text>
+      <view class='articleAuthor'>
+        <text>北京限竞房</text>
+        <text>1小时前</text>
+      </view>
+    </view>
+    <view class='articleImg'>
+      <image src="https://image.davfang.com/saas/ava/2018/12/06/728da85f-2701-4d59-b87c-25d2d5c48e9c.png"></image>
+    </view>
+  </view>
+  <view class='articleItem'>
+    <view class='articleTitle'>
+      <text>年底北京楼市探寻“平衡点” 刚需可选择余地加大</text>
+      <view class='imageMore'>
+        <image src="https://image.davfang.com/saas/ava/2018/12/07/b79fedc3-a051-4f2f-acc5-7c98e7269284.png"></image>
+        <image src="https://image.davfang.com/saas/ava/2018/12/07/b79fedc3-a051-4f2f-acc5-7c98e7269284.png"></image>
+        <image src="https://image.davfang.com/saas/ava/2018/12/07/b79fedc3-a051-4f2f-acc5-7c98e7269284.png"></image>
+      </view>
+      <view class='articleAuthor'>
+        <text>北京限竞房</text>
+        <text>1小时前</text>
+      </view>
+    </view>
+  </view>
+</template>

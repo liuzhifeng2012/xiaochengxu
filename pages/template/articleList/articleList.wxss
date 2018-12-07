@@ -1,0 +1,33 @@
+.articleItem{
+  padding: 20rpx;
+  display: flex; 
+  flex-direction: row;
+}
+.articleTitle{
+   font-size:32rpx;
+   display: flex;
+   flex-direction: column; 
+   justify-content:space-around;
+   word-break: break-all;
+}
+.articleTitle .imageMore{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin:12rpx 0;
+}
+.articleTitle .imageMore image{
+   width:220rpx;
+   height:180rpx;
+}
+.articleAuthor text{
+   font-size:28rpx;
+   color:#898989;
+}
+.articleImg{
+  margin-left:20rpx;
+}
+.articleImg image{
+    width:220rpx;
+    height:180rpx;
+}

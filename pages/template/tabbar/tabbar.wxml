@@ -1,0 +1,17 @@
+<!--pages/template/tabbar/tabbar.wxml-->
+<template name="tabbar">
+  <view class='tablist'>
+    <view class='tabitem'>
+      <image src="/images/tabIcon/eye.png"></image>
+      <text>文章</text>
+    </view>
+    <view class='tabitem'>
+      <image src="/images/tabIcon/icon-forum.png"></image>
+      <text>论坛</text>
+    </view>
+    <view class='tabitem'>
+      <image src="/images/tabIcon/user.png"></image>
+      <text>我的</text>
+    </view>
+  </view>
+</template>

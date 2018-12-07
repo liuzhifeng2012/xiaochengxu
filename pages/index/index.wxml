@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<import src="../template/articleList/articleList.wxml"/>
 <view class='indexContainer'>
   <navCustom navShow='{{false}}' />
   <view class='header'>
@@ -39,9 +40,11 @@
        </view>
      </view>
   </scroll-view>
-  <block class='articleList'>
-    <view bindtap='toDetail' data-viewitem='{{1}}'>
-       <template is="articleList"></template>
+  <block class='articleList' wx:for="{{articleList}}" wx:key="index">
+    <view bindtap='toDetail' data-viewitem='{{item}}'>
+       <template is="articleList" data="{{...item}}"></template>
     </view>
-  </block>
+  </block> 
+  <import src="../template/tabbar/tabbar.wxml"/>
+  <template is="tabbar" ></template>
 </view>

@@ -1,53 +1,75 @@
+@import '/pages/template/articleList/articleList.wxss';
+@import '/pages/template/navCustom/navCustom.wxss';
+@import '/pages/template/tabbar/tabbar.wxss';
 /**index.wxss**/
-.indexContainer{
-   margin-top:64px;
-   width:100%;
-   min-height: 100vh;
-   padding-bottom: 90rpx;
+
+.indexContainer {
+  margin-top: 64px;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 90rpx;
 }
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;      
-    padding:10rpx 30rpx ;
-    border-bottom: 1rpx solid #ccc;
-}
-.header image{
-   width:120rpx;
-   height:46rpx;
-}
-.searchWrap{
-   height:70rpx;
-   width:74%;
-   border-radius: 50rpx;
-   background-color:#f4f5f6;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size:12px;
-   color:#898989;
-}
-.searchWrap image{
-   width: 40rpx;
-   height:40rpx;
-   margin-right:10rpx;
-}
-.scrollView{ 
-  border-bottom: 1rpx solid #ccc;
-}
-.navList{
+
+.header {
+  background: #fff;
   display: flex;
-  padding:2rpx 8rpx 0rpx 8rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 30rpx;
+  border-bottom: 1rpx solid #ccc;
+  position: sticky;
+  top: 64px;
+  left: 0px;
+  box-sizing: border-box;
+}
+
+.header image {
+  width: 120rpx;
+  height: 46rpx;
+}
+
+.searchWrap {
+  height: 70rpx;
+  width: 74%;
+  border-radius: 50rpx;
+  background-color: #f4f5f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #898989;
+}
+
+.searchWrap image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.scrollView {
+  background: #fff;
+  border-bottom: 1rpx solid #ccc;
+  box-sizing: border-box;
+  position: sticky;
+  top: 102px;
+  left: 0;
+}
+
+.navList {
+  display: flex;
+  padding: 2rpx 8rpx 0rpx 8rpx;
   flex-direction: row;
 }
-.navItem{
-  flex:none;
+
+.navItem {
+  flex: none;
   margin: 0rpx 22rpx;
-  height:88rpx;
+  height: 88rpx;
   line-height: 88rpx;
-  font-size:32rpx;
+  font-size: 32rpx;
 }
-.navItem.active{
-   color:rgb(255, 134, 0);
-   border-bottom:1rpx solid rgb(255, 134, 0);
+
+.navItem.active {
+  color: rgb(255, 134, 0);
+  border-bottom: 1rpx solid rgb(255, 134, 0);
 }

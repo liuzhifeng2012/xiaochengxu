@@ -5,14 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+     viewId:''//文章id
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+      this.setData({
+         viewId:options.viewId
+      })
+      console.log(this.data.viewId)
   },
 
   /**
